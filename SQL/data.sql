@@ -2,6 +2,7 @@ DROP TABLE IF EXISTS OrderItems;
 DROP TABLE IF EXISTS Orders;
 DROP TABLE IF EXISTS Customers;
 
+--CREATE database exam;
 
 -- Create Customers Table
 CREATE TABLE Customers (

@@ -7,5 +7,14 @@
 # - In case of Empty input string, returns None
 
 def get_max(numbers:list) -> int:
-    pass
+    if numbers==None:
+        return None
+    if numbers==[]:
+        return None
+    max=numbers[0]
+    for i in numbers:
+        if i>max:
+            max=i
+    return max
 
+#print(get_max())

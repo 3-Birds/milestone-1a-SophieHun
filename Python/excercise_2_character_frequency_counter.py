@@ -15,4 +15,19 @@
 
 
 def get_frequency(input_string:str) -> dict:
-    pass
+    if input_string==None:
+        return None
+    if input_string=="":
+        return None
+    if input_string==[]:
+        return None
+    input_string=input_string.replace(" ","") #no space
+    dictionary= {}
+    letter_lst=list(input_string)
+    for i in letter_lst:
+        dictionary[i]=dictionary.get(i,0)+1
+    return dictionary
+
+    
+#print(get_frequency("Madarak álma"))   
+
